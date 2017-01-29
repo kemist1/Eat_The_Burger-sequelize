@@ -1,0 +1,38 @@
+body {
+    background-color: #1a1a1a;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.header {
+    background: url('http://www.gannett-cdn.com/-mm-/de0a34e464f1c8b5b0737ec2a91519fc37e97b79/c=1-0-767-1022&r=537&c=0-0-534-712/local/-/media/2016/01/07/Livonia/B9320422051Z.1_20160107223802_000_GFAD3CS9I.1-0.jpg') center fixed no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.intro {
+    font-size: 80px;
+    padding-top: 250px;
+    color: white;
+}
+
+.container {
+    color: white;
+    font-size: 30px;
+}
+
+.burgers,
+.devoured-burgers {
+    list-style: none;
+    text-align: left;
+}
+
+.btn-danger {
+    margin-left: 70%;
+}
+
+footer {
+    color: white;
+}

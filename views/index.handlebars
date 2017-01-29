@@ -1,0 +1,23 @@
+<div class="col-md-12 text-center">
+    <h1>Current Orders</h1>
+    <ul class="burgers">
+        {{#each allBurgersData}} {{#unless this.devoured}}
+        <li>{{this.burger_name}}  
+            <form method="POST" action="/eat?_method=PUT">
+                <button type="submit" name="burgerId" value={{this.id}} class="btn btn-danger center-block">Devour it!</button>
+            </form>
+            <hr>
+        </li>
+        {{/unless}} {{/each}}
+    </ul>
+</div>
+<div class="col-md-12 text-center">
+    <h1>Devoured Burgers</h1> {{#each allBurgersData}} {{#if this.devoured}}
+    <ul class="devoured-burgers">
+        <li>
+            {{this.burger_name}}
+        </li>
+        <hr>
+    </ul>
+    {{/if}} {{/each}}
+</div>

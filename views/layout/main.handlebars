@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Your own Burger!</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="header text-center">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6">
+                <h1 class="intro">Create Your Own<br>
+			Burger!</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Create Your Own!</h1>
+                <form method="POST" action="/add">
+                    <textarea class="form-control" name="burger_name" placeholder="Name"></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-danger btn-lg">Create</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            {{{body}}}
+        </div>
+        <div class="ad">
+            <div class="row">
+                <div class="col-md-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row text-center">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
